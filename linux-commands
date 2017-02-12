@@ -1,5 +1,8 @@
 1) find and replace a string in a directory
 
+ex 
+
+grep -rl 'windows' . | xargs sed -i 's/windows/linux/g'
 grep -rl ":3306" . | xargs sed -i 's/:3306/:3307/g'
 
 2)
