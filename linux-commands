@@ -1,3 +1,5 @@
-find and replace a string in a directory
+1) find and replace a string in a directory
 
 grep -rl ":3306" . | xargs sed -i 's/:3306/:3307/g'
+
+2)
