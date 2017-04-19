@@ -9,3 +9,16 @@ grep -rl ":3306" . | xargs sed -i 's/:3306/:3307/g'
 
 reference 
 http://www.fromdev.com/2016/09/powerful-grep-command-tips.html
+
+
+to list all the files inside directory 
+
+find . -name '*.php' | xargs wc -l
+
+
+
+
+
+find and replace inside directory 
+
+grep -rl '54.169.167.230' ./ | xargs sed -i 's/54.169.167.230/54.255.246.219/g'
